@@ -1,0 +1,296 @@
+header {
+    background-color: $dark-red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    padding: 30px 88px;
+
+    @include pad {
+        padding: 30px;
+    }
+
+    @include phone {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+    
+        @include phone {
+            flex-wrap: wrap;
+        }
+
+        li {
+            @include phone {
+                width: 50%;
+                text-align: center;
+                border: $white 1px solid;
+                padding: 8px 0px;
+            }
+
+            a {
+                color: $white;
+                font-size: 20px;
+                line-height: 30px;
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+
+.logo {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true");
+    background-size: cover;
+    width: 80px;
+    height: 48px;
+    display: block;
+
+    @include phone {
+        width: 48px;
+        height: 29px;
+        margin: 10px 0;
+    }
+}
+
+
+footer {
+    background-color: $dark-red;
+    padding-top: 32px;
+    padding-bottom: 39px;
+
+    @include pad {
+        padding-bottom: 21px;
+    }
+
+    @include phone {
+        padding-bottom: 24px;
+        padding-top: 0;
+    }
+
+    a {
+        color: $white;
+    }
+
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phone {
+        justify-content: flex-end;
+        position: relative;
+    }
+}
+
+.footer-container {
+    width: 1110px;
+    margin: 0 auto;
+
+    @include pad {
+        width: 90%;
+    }
+} 
+
+.page-link {
+    display: flex;
+
+    @include phone {
+        display: none;
+    }
+
+    li {
+        a {
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 48px;
+
+            @include pad {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+.social-media-link {
+    display: flex;
+
+    @include phone {
+        position: absolute;
+        top: 18px;
+    }
+
+    li {
+        a {
+            display: block;
+            width: 48px;
+            height: 48px;
+            margin-left: 32px;
+
+            @include pad {
+                display: block;
+                width: 24px;
+                height: 24px;
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+.link-facebook {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/logo-facebook.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.link-instagram {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/logo-instagram.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30%;
+}
+
+.link-line {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body {
+    padding: 24px 0;
+    border-bottom: $white 1px solid;
+
+    @include pad {
+        padding: 18px 0;
+    }
+
+    a {
+        font-size: 36px;
+        line-height: 54px;
+        vertical-align: middle;
+
+        @include pad {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include phone {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}
+
+.footer-phone-icon {
+    display: inline-block;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    margin-right: 22px;
+    vertical-align: middle;
+
+    @include pad {
+        width: 18px;
+        height: 18px;
+        margin-right: 11px;
+    }
+
+    @include phone {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+    }
+}
+
+.footer-email-icon {
+    display: inline-block;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    margin-right: 22px;
+    vertical-align: middle;
+
+    @include pad {
+        width: 18px;
+        height: 18px;
+        margin-right: 11px;
+    }
+
+    @include phone {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+    }
+}
+
+.footer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    @include pad {
+        margin-top: 16px;
+    }
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 24px;
+
+        @include phone {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 8px;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        @include phone {
+            flex-direction: column;
+        }
+
+        li {
+            @include phone {
+                margin-bottom: 8px;
+            }
+            
+            a{
+                margin-left: 48px;
+                font-size: 14px;
+                line-height: 21px;
+
+                @include pad {
+                    margin-left: 24px;
+                }
+
+                @include phone {
+                    margin-left: 0;
+                    margin-bottom: 8px;
+                }
+            }
+        }         
+    }
+}

@@ -1,0 +1,645 @@
+.banner {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+    height: 840px;
+    padding-top: 348px;
+    padding-right: 407px;
+
+    @include pad {
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
+        padding-top: 372px;
+        padding-right: 43px;
+    }
+
+    @include phone {
+        height: 394px;
+        padding-top: 164px;
+        padding-right: 15px;
+        background-size: cover;
+    }
+
+    h1 {
+        line-height: 92px;
+        font-size: 64px;
+        text-align: right;
+        font-weight: bold;
+        color: $brown;
+
+        @include pad {
+            line-height: 72px;
+            font-size: 48px;
+        }
+
+        @include phone {
+            line-height: 45px;
+            font-size: 32px;
+        }
+
+        span{
+            line-height: 52px;
+            font-size: 36px;
+            font-weight: normal;
+
+            @include pad {
+                line-height: 30px;
+                font-size: 20px;
+            }
+
+            @include phone {
+                line-height: 30px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.service {
+    background-color: $light-pink;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include pad {
+        padding-top: 40px;
+        padding-bottom: 36px;
+    }
+
+    @include phone {
+        padding-top: 32px;
+        padding-bottom: 0;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        margin-bottom: 48px;
+        color: $brown;
+
+        @include pad {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+
+        @include phone {
+            font-size: 24px;
+            line-height: 35px;
+            margin-bottom: 28px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        @include pad {
+            flex-wrap: wrap;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0 15px;
+            width: 255px;
+
+            @include pad {
+                margin: 20px 50px;
+            }
+
+            @include phone {
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+
+            img {
+                height: 83px;
+                display: block;
+                margin-bottom: 24px;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.classic-glasses {
+    padding-top: 60px;
+    padding-bottom: 48px;
+    text-align: center;
+
+    @include pad {
+        padding-top: 40px;
+    }
+
+    @include phone {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: $brown;
+
+        @include pad {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+    }
+
+    ul {
+        @include pad {
+            padding-left: 39px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @include phone {
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 32px;
+
+            @include pad {
+                margin-bottom: 8px;
+            }
+
+            @include phone {
+                width: 345px;
+                height: 134px;
+            }
+
+            h3 {
+                font-style: italic;
+                font-size: 48px;
+                line-height: 72px;
+                color: #AA0601;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                margin: 0px 30px;
+
+                @include pad {
+                    font-size: 28px;                    
+                }
+
+                @include phone {
+                    line-height: 37px;
+                }
+            }
+    
+            img{
+                margin-left: 10px;
+                margin-right: 10px;
+
+                @include pad {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.classic-glasses-photo {
+    display: block;
+    width: 635px;
+    height: 320px;
+
+    @include pad {
+        width: 390px;
+        height: 168px;
+    }
+
+    @include phone {
+        display: none;
+    }
+}
+
+.classic-glasses-special {
+    flex-direction: row-reverse;
+
+    @include pad {
+        flex-direction: row;
+    }
+}
+
+.classic-glasses-optical {
+    @include phone {
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true");
+        background-size: cover;
+    }
+}
+
+.classic-glasses-sunglesses {
+    @include phone {
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true");
+        background-size: cover;
+    }
+}
+
+.classic-glasses-functional {
+    @include phone {
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true");
+        background-size: cover;
+    }
+}
+
+.co-brand-glasses {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    @include pad {
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+
+    @include phone {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+        @include pad {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+
+        @include phone {
+            font-size: 20px;
+            line-height: 29px;
+            margin-bottom: 20px;
+        }
+    }
+
+    h3 {
+        color: #AA0601;
+        font-size: 72px;
+        line-height: 108px;
+        font-weight: bold;
+
+        @include pad {
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include phone {
+            flex-wrap: wrap;
+        }
+
+        li{
+            margin: 0 15px;
+            width: 540px;
+            height: 455px;
+
+            @include pad {
+                width: 330px;
+                height: 278px;
+            }
+
+            @include phone {
+                margin-bottom: 16px;
+            }
+        }
+    }    
+}
+
+.doubleA {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true");    
+    background-size: cover;
+}
+
+.youth {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true");
+    background-size: cover;
+}
+
+.background {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-recommend {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    @include pad {
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+
+    @include phone {
+        padding-top: 32px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        margin-bottom: 40px;
+        font-weight: bold;
+        color: $brown;
+
+        @include phone {
+            font-size: 20px;
+            line-height: 29px;
+            margin-bottom: 0px;
+        }
+    }
+
+    ul {
+        li {
+            width: 23%;    
+            min-height: 460px;
+            border: 1px solid #DEE2E6;
+            border-radius: 4px;
+            margin: 0 1%;
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column;
+
+            @include pad {
+                width: 45%;
+                margin: 0 1%;
+                box-sizing: content-box;
+                margin-bottom: 32px;
+            }
+
+            @include phone {
+                width: 100%;    
+                min-height: 460px;
+                margin: 16px 15px;
+            }
+        }
+    }
+
+    img {
+        height: 256px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.customer-recommend-container{
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    @include pad {
+        width: 100%;      
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .comment-area {
+        padding: 16px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .customer-name {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 8px;
+        }
+        
+        .customer-comment {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        .comment-date {
+            font-size: 14px;
+            line-height: 21px;
+            color: #707070;
+        }
+    }
+}
+
+.contact {
+    background-color: #AA06010D;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    @include pad {
+        padding-top: 40px;
+        padding-bottom: 66px;
+    }
+
+    @include phone {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        color: #000000;
+
+        @include pad {
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        @include phone {
+            font-size: 20px;
+            line-height: 29px;
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        color: #000000;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        text-align: left;
+
+        @include pad {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        @include phone {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.contact-container {
+    width: 730px;
+    margin: 0 auto;
+
+    @include pad {
+        width: 450px;
+    }
+
+    @include phone {
+        width: 345px;
+    }
+
+    form {
+        label {
+            display: block;
+            text-align: left;
+            width: 100%;
+            color: #000000;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4px;
+
+            @include pad {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        input[type=text], textarea {
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 16px;
+            height: 50px;
+            border: 1px solid #000000;
+            background: transparent;
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 16px;
+            color: #000000;
+
+            @include pad {
+                margin-bottom: 8px;
+                height: 36px;
+                font-size: 14px;
+                line-height: 21px;
+                padding-left: 12px;
+            }
+        }
+
+        textarea {
+            height: 136px;
+            padding-top: 16px;
+
+            @include pad {
+                height: 100px;
+                padding-top: 8px;
+                margin-bottom: 9px;
+            }
+        }
+
+        input::placeholder, textarea::placeholder {
+            opacity: 0.2;  
+        }
+
+        .agree-area {
+            text-align: left;
+            margin-bottom: 40px;
+        
+            @include pad {
+                margin-bottom: 30px;
+                display: flex;
+            }
+
+            label {
+                display: inline
+            }
+
+            input[type=checkbox] {
+                width: 24px;
+                height: 24px;
+                display: inline;
+                vertical-align: middle;
+    
+                @include pad {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+
+        input[type=submit] {
+            background-color: #AA0601;
+            color: #FFFFFF;
+            padding: 16px 143px;
+            font-size: 16px;
+            line-height: 24px;
+            cursor: pointer;
+            border: 0;
+
+            @include pad {
+                padding: 10px 77px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            @include phone {
+                padding: 8px 54px;
+            }
+        }
+    }
+}
+
+.label-agree {
+    font-size: 16px;
+    line-height: 24px;
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+    cursor: pointer;
+
+    @include pad {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
