@@ -1,0 +1,186 @@
+.location-container {
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 108px;
+
+    @include pad {
+        width: 690px;
+        padding-top: 60px;
+        padding-bottom: 76px;
+    }
+
+    @include phone {
+        width: 345px;
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
+        border-left: 8px solid $dark-red;
+        padding-left: 16px;
+        margin-bottom: 65px;
+
+        @include pad {
+            margin-bottom: 40px;
+        }
+
+        @include phone {
+            margin-bottom: 24px;
+            padding-left: 8px;
+            font-size: $font-size-md;
+            line-height: $line-height-md;
+        }
+    }
+}
+
+.location-selector {
+    margin-bottom: 37px;
+
+    @include pad {
+        margin-bottom: 24px;
+    }
+
+    @include phone {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: $font-size-md;
+        line-height: $line-height-md;
+        margin-right: 20px;
+
+        @include pad {
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
+        }
+
+        @include {
+            margin-right: 12px;
+        }
+    }
+
+    select {
+        height: 45px;
+        width: 324px;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+        border: $light-gray 1px solid;
+        color: $gray;
+
+        @include pad {
+            width: 237px;
+        }
+
+        @include phone {
+            width: 277px;
+            height: 36px;
+        }
+    }
+}
+
+.location-store-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .location-store {
+        width: 30%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        margin-bottom: 52px;
+
+        @include pad {
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 20px;
+        }
+
+        @include phone {
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 16px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 224px;
+
+            @include pad {
+                height: 164px;
+            }
+        }
+
+        h2 {
+            font-size: $font-size-md;
+            line-height: $line-height-md;
+            padding: 12px 24px;
+            border: $light-gray 1px solid;
+        }
+
+        ul {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 28px;
+            padding-right: 24px;
+            border: $light-gray 1px solid;
+            
+            li {              
+                line-height: 30px;
+                vertical-align: text-top;
+                display: flex;
+
+                @include pad {
+                    line-height: 21px;
+                }
+
+                a {
+                    display: inline-block;
+                    vertical-align: text-top;
+                    font-size: $font-size-sm;
+                }
+            }
+        }
+    }
+}
+
+@mixin location-store-icon($background-image) {
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    background-image: url($background-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 11px;
+    content:"";
+}
+
+.location-store-phone {
+    @include location-store-icon("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-phone-black.svg")
+}
+
+.location-store-time {
+    @include location-store-icon("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-clock-black.svg")
+}
+
+.location-store-address {
+    @include location-store-icon("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-map.svg")
+}
+
+.location-detail-btn {
+    cursor: pointer;
+    background-color: $black;
+    width: 100%;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    padding: 20px 0;
+    color: $white;
+
+    @include pad {
+        padding: 16px 0;
+    }
+}

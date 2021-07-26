@@ -1,0 +1,250 @@
+.product-category-link {
+    display: flex;
+    justify-content: center;
+
+    li {
+        border: $light-gray solid 1px;
+
+        a {
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
+            width: 370px;
+            height: 96px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+
+            @include pad {
+                width: 230px;
+                height: 60px;
+                font-size: $font-size-md;
+                line-height: $line-height-md;
+            }
+
+            @include phone {
+                width: 115px;
+                height: 30px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+@mixin link-icon($background-image) {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background-image: url($background-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    content:"";
+
+    @include phone {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px;
+    }
+}
+
+.optical-link:before {
+    @include link-icon("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-diamond-black.svg");
+}
+
+.sunglasses-link:before {
+    @include link-icon("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-sun-black.svg");
+}
+
+.functional-link:before {
+    @include link-icon("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-thunder-black.svg");
+}
+
+.active-link {
+    border-bottom: $dark-red 8px solid;
+
+    @include phone {
+        border-bottom: $dark-red 4px solid;
+    }
+}
+
+.product-banner {
+    display: flex;
+
+    img {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    @include phone {
+        height: 148px;
+    }
+}
+
+.product-container {
+    width: 1100px;
+    padding-top: 80px;
+    padding-bottom:160px;
+    margin: 0 auto;
+
+    @include pad {
+        width: 90%;
+        padding-top: 56px;
+        padding-bottom: 96px;
+    }
+
+    @include phone {
+        width: 345px;
+        padding-top: 32px;
+        padding-bottom: 56px;
+    }
+
+    h1 {
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
+        text-align: center;
+        font-weight: bold;
+
+        @include pad {
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
+        }
+
+        @include phone {
+            font-size: $font-size-md;
+            line-height: $line-height-md;
+        }
+    }
+
+    h2 {
+        font-size: $font-size-lg;
+        line-height: $line-height-lg;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: bold;
+
+        @include pad {
+            font-size: $font-size-md;
+            line-height: $line-height-md;
+            margin-bottom: 32px;
+        }
+
+        @include phone {
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 255px;
+    margin-bottom: 104px;
+
+    @include pad {
+        width: 330px;
+        margin-bottom: 72px;
+    }
+
+    @include phone {
+        width: 345px;
+        margin-bottom: 32px;
+    }
+
+    img {
+        display: block;
+        width: 255px;
+        height: 164px;
+
+        @include pad {
+            width: 330px;
+            height: 164px;
+        }
+
+        @include phone {
+            width: 345px;
+            height: 166px;
+        }
+    }
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+
+    @include phone {
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+    }
+}
+
+.product-price {
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    color: $dark-red;
+    font-weight: bold;
+
+    @include phone {
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+    }
+}
+
+@mixin color-rect($color, $size) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+    display: inline-block;
+    border-radius: 20%;
+    margin-right: 2px;
+}
+
+.product-color {
+    .brown {
+        @include color-rect($dark-green, 24px);
+
+        @include phone {
+            @include color-rect($dark-green, 16px);
+        }
+    }
+
+    .orange {
+        @include color-rect($dark-red, 24px);
+
+        @include phone {
+            @include color-rect($dark-red, 16px);
+        }
+    }
+}
+
+.product-pages {
+    display: flex;
+    justify-content: center;
+
+    li {
+        a {
+            border: 1px $light-gray solid;
+            display: block;
+            padding: 12px;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}

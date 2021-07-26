@@ -1,52 +1,52 @@
 .banner {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
     height: 840px;
-    padding-top: 348px;
-    padding-right: 407px;
+    padding-right: 405px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
     @include pad {
         background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
-        padding-top: 372px;
         padding-right: 43px;
     }
 
     @include phone {
         height: 394px;
-        padding-top: 164px;
         padding-right: 15px;
         background-size: cover;
     }
 
     h1 {
-        line-height: 92px;
-        font-size: 64px;
+        line-height: $line-height-xxl;
+        font-size: $font-size-xxl;
         text-align: right;
         font-weight: bold;
         color: $brown;
 
         @include pad {
-            line-height: 72px;
-            font-size: 48px;
+            line-height: $line-height-xl;
+            font-size: $font-size-xl;
         }
 
         @include phone {
-            line-height: 45px;
-            font-size: 32px;
+            line-height: $line-height-lg;
+            font-size: $font-size-lg;
         }
 
-        span{
-            line-height: 52px;
-            font-size: 36px;
+        span {
+            line-height: $font-size-xl;
+            font-size: $line-height-md;
             font-weight: normal;
 
             @include pad {
-                line-height: 30px;
-                font-size: 20px;
+                line-height: $line-height-md;
+                font-size: $font-size-md;
             }
 
             @include phone {
-                line-height: 30px;
-                font-size: 16px;
+                line-height: $line-height-sm;
+                font-size: $font-size-sm;
             }
         }
     }
@@ -69,21 +69,21 @@
     }
 
     h2 {
-        font-size: 48px;
-        line-height: 72px;
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
         font-weight: bold;
         margin-bottom: 48px;
         color: $brown;
 
         @include pad {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
             margin-bottom: 40px;
         }
 
         @include phone {
-            font-size: 24px;
-            line-height: 35px;
+            font-size: $font-size-md;
+            line-height: $line-height-md;
             margin-bottom: 28px;
         }
     }
@@ -120,14 +120,14 @@
 
             h3 {
                 font-weight: bold;
-                font-size: 24px;
-                line-height: 36px;
+                font-size: $font-size-md;
+                line-height: $line-height-md;
                 margin-bottom: 8px;
             }
 
             p{
-                font-size: 16px;
-                line-height: 24px;
+                font-size: $font-size-sm;
+                line-height: $line-height-sm;
                 text-align: left;
                 color: #000000;
             }
@@ -150,16 +150,22 @@
     }
 
     h2 {
-        font-size: 48px;
-        line-height: 72px;
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
         font-weight: bold;
         margin-bottom: 40px;
         color: $brown;
 
         @include pad {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
             margin-bottom: 32px;
+        }
+
+        @include phone {
+            font-size: $font-size-md;
+            line-height: $line-height-md;
+            margin-bottom: 20px;
         }
     }
 
@@ -194,8 +200,8 @@
 
             h3 {
                 font-style: italic;
-                font-size: 48px;
-                line-height: 72px;
+                font-size: $font-size-xl;
+                line-height: $line-height-xl;
                 color: #AA0601;
                 font-weight: bold;
                 display: flex;
@@ -203,11 +209,7 @@
                 margin: 0px 30px;
 
                 @include pad {
-                    font-size: 28px;                    
-                }
-
-                @include phone {
-                    line-height: 37px;
+                    font-size: $font-size-md;                    
                 }
             }
     
@@ -287,34 +289,34 @@
     }
 
     h2 {
-        color: #FFFFFF;
-        font-size: 48px;
-        line-height: 72px;
+        color: $white;
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
         font-weight: bold;
         margin-bottom: 40px;
 
         @include pad {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
             margin-bottom: 32px;
         }
 
         @include phone {
-            font-size: 20px;
-            line-height: 29px;
+            font-size: $font-size-md;
+            line-height: $line-height-md;
             margin-bottom: 20px;
         }
     }
 
     h3 {
         color: #AA0601;
-        font-size: 72px;
-        line-height: 108px;
+        font-size: $font-size-xxxl;
+        line-height: $line-height-xxxl;
         font-weight: bold;
 
         @include pad {
-            font-size: 25px;
-            line-height: 32px;
+            font-size: $font-size-md;
+            line-height: $line-height-md;
         }
     }
 
@@ -377,16 +379,22 @@
     }
 
     h2 {
-        font-size: 48px;
-        line-height: 72px;
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
         margin-bottom: 40px;
         font-weight: bold;
         color: $brown;
+        
+        @include pad {
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
+            margin-bottom: 32px;
+        }
 
         @include phone {
-            font-size: 20px;
-            line-height: 29px;
-            margin-bottom: 0px;
+            font-size: $font-size-md;
+            line-height: $line-height-md;
+            margin-bottom: 20px;
         }
     }
 
@@ -411,7 +419,9 @@
             @include phone {
                 width: 100%;    
                 min-height: 460px;
-                margin: 16px 15px;
+                margin-bottom: 16px;
+                margin-left: 15px;
+                margin-right: 15px;
             }
         }
     }
@@ -445,20 +455,20 @@
         justify-content: space-between;
 
         .customer-name {
-            font-size: 14px;
-            line-height: 21px;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
             margin-bottom: 8px;
         }
         
         .customer-comment {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
         }
         
         .comment-date {
-            font-size: 14px;
-            line-height: 21px;
-            color: #707070;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
+            color: $gray;
         }
     }
 }
@@ -480,34 +490,34 @@
     }
 
     h2 {
-        font-size: 48px;
-        line-height: 72px;
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
         font-weight: bold;
         margin-bottom: 24px;
         color: #000000;
 
         @include pad {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: $font-size-lg;
+            line-height: $line-height-lg;
         }
 
         @include phone {
-            font-size: 20px;
-            line-height: 29px;
+            font-size: $font-size-md;
+            line-height: $line-height-md;
             margin-bottom: 20px;
         }
     }
 
     p {
         color: #000000;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: $font-size-md;
+        line-height: $line-height-md;
         margin-bottom: 20px;
         text-align: left;
 
         @include pad {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
             margin-bottom: 16px;
         }
 
@@ -535,14 +545,9 @@
             text-align: left;
             width: 100%;
             color: #000000;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
             margin-bottom: 4px;
-
-            @include pad {
-                font-size: 14px;
-                line-height: 21px;
-            }
         }
 
         input[type=text], textarea {
@@ -553,17 +558,14 @@
             height: 50px;
             border: 1px solid #000000;
             background: transparent;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
             padding-left: 16px;
             color: #000000;
 
             @include pad {
                 margin-bottom: 8px;
                 height: 36px;
-                font-size: 14px;
-                line-height: 21px;
-                padding-left: 12px;
             }
         }
 
@@ -579,7 +581,7 @@
         }
 
         input::placeholder, textarea::placeholder {
-            opacity: 0.2;  
+            opacity: 0.4;  
         }
 
         .agree-area {
@@ -612,15 +614,13 @@
             background-color: #AA0601;
             color: #FFFFFF;
             padding: 16px 143px;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
             cursor: pointer;
             border: 0;
 
             @include pad {
                 padding: 10px 77px;
-                font-size: 14px;
-                line-height: 21px;
             }
 
             @include phone {
@@ -631,15 +631,10 @@
 }
 
 .label-agree {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     display: inline;
     width: auto;
     vertical-align: middle;
     cursor: pointer;
-
-    @include pad {
-        font-size: 14px;
-        line-height: 21px;
-    }
 }
