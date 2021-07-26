@@ -123,6 +123,7 @@
                 font-size: $font-size-md;
                 line-height: $line-height-md;
                 margin-bottom: 8px;
+                color: $brown;
             }
 
             p{
@@ -230,6 +231,7 @@
     display: block;
     width: 635px;
     height: 320px;
+    object-fit: cover;
 
     @include pad {
         width: 390px;
@@ -349,11 +351,13 @@
 .doubleA {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true");    
     background-size: cover;
+    background-position: center;
 }
 
 .youth {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true");
     background-size: cover;
+    background-position: center;
 }
 
 .background {
@@ -428,6 +432,7 @@
 
     img {
         height: 256px;
+        object-fit: cover;
     }
 
     p {
@@ -436,7 +441,7 @@
 }
 
 .customer-recommend-container{
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -528,7 +533,7 @@
 }
 
 .contact-container {
-    width: 730px;
+    max-width: 730px;
     margin: 0 auto;
 
     @include pad {
@@ -550,7 +555,7 @@
             margin-bottom: 4px;
         }
 
-        input[type=text], textarea {
+        input[type=text], input[type=email], input[type=tel], textarea {
             display: block;
             text-align: left;
             width: 100%;

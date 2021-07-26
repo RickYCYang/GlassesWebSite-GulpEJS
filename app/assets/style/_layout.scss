@@ -89,7 +89,7 @@ footer {
 }
 
 .footer-container {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
 
     @include pad {
@@ -242,8 +242,8 @@ footer {
     }
 
     p{
-        font-size: $font-size-sm;
-        line-height: $line-height-md;
+        font-size: 14px;
+        line-height: 21px;
         margin-bottom: 8px;
     }
 

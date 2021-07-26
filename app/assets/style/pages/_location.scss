@@ -1,17 +1,17 @@
 .location-container {
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 108px;
 
     @include pad {
-        width: 690px;
+        max-width: 690px;
         padding-top: 60px;
         padding-bottom: 76px;
     }
 
     @include phone {
-        width: 345px;
+        max-width: 345px;
         padding-top: 28px;
         padding-bottom: 40px;
     }
@@ -57,7 +57,7 @@
             line-height: $line-height-sm;
         }
 
-        @include {
+        @include phone{
             margin-right: 12px;
         }
     }
@@ -109,6 +109,7 @@
             display: block;
             width: 100%;
             height: 224px;
+            object-fit: cover;
 
             @include pad {
                 height: 164px;
