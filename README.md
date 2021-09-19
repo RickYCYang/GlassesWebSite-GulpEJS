@@ -1,3 +1,12 @@
+## Github Page - Home Page for Desktop, Pad, Phone
+https://rickycyang.github.io/WebLayout-Glasses-Week4/
+
+## Web Layout Practice
+HTML, Scss
+
+![Home](https://user-images.githubusercontent.com/54363801/133922188-33315a82-342a-43d5-b9a3-feb1103756c9.png)
+
+
 ## 指令列表
 
 - `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
